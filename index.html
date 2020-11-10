@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="ExpenseTracker" content="classbased">
+        <meta name="description" content="push,map,splice,sum,minus,delete,append">
+        <meta name="htmldescrition" content="section,header,form,container,table">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <title>ExpenseTracker</title>
+    </head>
+    <body>
+        <div>
+            <header id="htitle">
+                <h1>New ExpenseTracker App</h1>
+            </header>
+            <section class="content">
+                <h2 id="sectiontitle">Add Expenses</h2>
+                
+                <hr>
+                <div class="form">
+                    <form id="expense-Form">
+                        <div class="form-line left">
+                            <span for="category">Category:</span>
+                            <select id="category">
+                                <option value="choose_one">Choose one</option>
+                                <option>Fasion</option>
+                                <option>Electronics</option>
+                                <option>Grosaries</option>
+                                <option>Pharamacy</option>
+                                <option>Transport</option>
+                                <option>others</option>
+                            </select>
+                        </div>
+                        <div class="form-line right">
+                            <span for="name">ExpenseName:</span>
+                            <input type="text" id="name">
+                        </div>
+                        <div class="form-line  left">
+                            <span for="dateTime">Date:</span>
+                            <input type="datetime-local" id="dateTime">
+                        </div>
+                        <div class="form-line right">
+                            <span for="price">Price:</span>
+                            <input type="number" id="price">
+                        </div>
+                        <button type="submit" id="btndata">Add Expenses</button>
+                    </form>
+                </div>
+            </section>
+            <section class="content">
+                <div id='empty'> </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>ExpenseName</th>
+                            <th>Date&Time</th>
+                            <th>Price</th>
+                            <th>Option</th>
+                        </tr>
+                    </thead>
+                    <tbody id="expenseTable">
+                        <tr>
+                            <td colspan="5">No expense items added! Please Add Expense Items</td>
+                        </tr>
+                    </tbody>
+                </table>
+                    <thead>
+                        <tr>
+                            <br>
+                            <hr>
+                            TotalPrice: <div id="totalPrice"></div>
+                        </tr>
+                    </thead>
+            </section>
+            
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

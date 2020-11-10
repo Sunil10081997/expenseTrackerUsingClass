@@ -1,0 +1,63 @@
+*{
+    margin: 0rem;
+    font-family: 'Roboto' ,sans-serif;
+}
+body{
+    background-color: lawngreen;
+    color: black;
+}
+#htitle{
+    text-align: center;
+    color: brown;
+}
+#sectiontitle{
+    background: inherit;
+    font-weight: initial;
+}
+.content{
+    width: 580px;
+    background-color: brown;
+    margin: 0 auto;
+    padding: 3%;
+    padding-left: 6%;
+}
+.form-line{
+    display: inline-flex;
+    padding: 5px 0;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+    margin-right: 100px;
+}
+button{
+    width: 10rem;
+    border-radius: .5rem;
+    margin: 14px 25%;
+    height: 50px;
+    padding: .5rem;
+    font-size: 18px;
+    background: brown;
+    color: cornsilk;
+    line-height: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+input select{
+    width: 130px;
+    margin-left: 10px;
+    cursor: text;
+}
+table{
+    width: 100%;
+}
+thead{
+    background-color: blanchedalmond;
+    line-height: 1rem;
+}
+a{
+    text-decoration: underline;
+    cursor: pointer;
+}
